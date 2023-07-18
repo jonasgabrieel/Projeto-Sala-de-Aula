@@ -2,21 +2,19 @@
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
- * 
- * @author Michael Kölling and David Barnes
- * @version 2016.02.29
+
  */
 public class Student
 {
-    // the student's full name
+    // Nome completo do estudante
     private String name;
-    // the student ID
+    // ID do estudante
     private String id;
-    // the amount of credits for study taken so far
+    // A quantidade de créditos para o estudo feito até agora
     private int credits;
 
     /**
-     * Create a new student with a given name and ID number.
+     *Crie um novo aluno com um determinado nome e número de identificação
      */
     public Student(String fullName, String studentID)
     {
@@ -26,7 +24,7 @@ public class Student
     }
 
     /**
-     * Return the full name of this student.
+     * Retornar o nome completo deste aluno.  
      */
     public String getName()
     {
@@ -34,7 +32,7 @@ public class Student
     }
 
     /**
-     * Set a new name for this student.
+     *Defina um novo nome para este aluno.
      */
     public void changeName(String replacementName)
     {
@@ -42,7 +40,7 @@ public class Student
     }
 
     /**
-     * Return the student ID of this student.
+     * Retorna o numero de identificação do aluno
      */
     public String getStudentID()
     {
@@ -50,7 +48,7 @@ public class Student
     }
 
     /**
-     * Add some credit points to the student's accumulated credits.
+     * Adicione alguns pontos de crédito aos créditos acumulados do aluno.
      */
     public void addCredits(int additionalPoints)
     {
@@ -58,7 +56,7 @@ public class Student
     }
 
     /**
-     * Return the number of credit points this student has accumulated.
+     *Retorne o número de pontos de crédito que este aluno acumulou.
      */
     public int getCredits()
     {
@@ -66,9 +64,9 @@ public class Student
     }
 
     /**
-     * Return the login name of this student. The login name is a combination
-     * of the first four characters of the student's name and the first three
-     * characters of the student's ID number.
+     *Retorne o nome de login deste aluno. O nome de login é uma combinação
+      * dos quatro primeiros caracteres do nome do aluno e dos três primeiros
+      * caracteres do número de identificação do aluno.
      */
     public String getLoginName()
     {
@@ -76,7 +74,7 @@ public class Student
     }
     
     /**
-     * Print the student's name and ID number to the output terminal.
+     *Print o nome do estudante junto com o ID e sua quantidade de creditos
      */
     public void print()
     {
