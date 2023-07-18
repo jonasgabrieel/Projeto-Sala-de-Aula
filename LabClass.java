@@ -1,11 +1,9 @@
 import java.util.*;
 
 /**
- * The LabClass class represents an enrolment list for one lab class. It stores
- * the time, room and participants of the lab, as well as the instructor's name.
- * 
- * @author Michael Kölling and David Barnes
- * @version 2016.02.29
+ *A classe LabClass representa uma lista de inscrição para uma classe de laboratório. ele armazena
+ * o horário, sala e participantes do laboratório, bem como o nome do instrutor.
+
  */
 public class LabClass
 {
@@ -16,8 +14,8 @@ public class LabClass
     private int capacity;
     
     /**
-     * Create a LabClass with a maximum number of enrolments. All other details
-     * are set to default values.
+     * Crie um LabClass com um número máximo de inscrições. Todos os outros detalhes
+      * são definidos com valores padrão.
      */
     public LabClass(int maxNumberOfStudents)
     {
@@ -29,7 +27,7 @@ public class LabClass
     }
 
     /**
-     * Add a student to this LabClass.
+     * Adicione um aluno a este LabClass.
      */
     public void enrollStudent(Student newStudent)
     {
@@ -42,7 +40,7 @@ public class LabClass
     }
     
     /**
-     * Return the number of students currently enrolled in this LabClass.
+     *Retorna o número de alunos atualmente matriculados neste LabClass.
      */
     public int numberOfStudents()
     {
@@ -50,16 +48,16 @@ public class LabClass
     }
     
     /**
-     * Set the room number for this LabClass.
-     */
+* Defina o número da sala para este LabClass.  
+*/
     public void setRoom(String roomNumber)
     {
         room = roomNumber;
     }
     
     /**
-     * Set the time for this LabClass. The parameter should define the day
-     * and the time of day, such as "Friday, 10am".
+    * Defina o tempo para este LabClass. O parâmetro deve definir o dia
+    * e a hora do dia, como "sexta-feira, 10h".
      */
     public void setTime(String timeAndDayString)
     {
@@ -67,16 +65,16 @@ public class LabClass
     }
     
     /**
-     * Set the name of the instructor for this LabClass.
-     */
+       * Defina o nome do instrutor para este LabClass.   
+       */
     public void setInstructor(String instructorName)
     {
         instructor = instructorName;
     }
     
     /**
-     * Print out a class list with other LabClass details to the standard
-     * terminal.
+     *Imprima uma lista de classe com outros detalhes LabClass para o padrão
+      * terminal.
      */
     public void printList()
     {
